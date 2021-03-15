@@ -18,5 +18,8 @@ def preprocessDate(Date):
     mot = val_list[key_list.index(date[1])]
     
     dates.append(date[2]+"-"+ mot+"-"+ day)
-  for i in range(0,len(dates)):
-    print(dates[i])
+  return dates
+
+dates = preprocessDate(Date)
+for i in range(0,len(dates)):
+   print(dates[i])
